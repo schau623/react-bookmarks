@@ -16,9 +16,7 @@ const TableHeader = () => {
   return (
     <thead>
       <tr>
-        <th>Link</th>
-        <th>Edit</th>
-        <th>Remove</th>
+        <th>Bookmark</th>
       </tr>
     </thead>
   )
@@ -30,7 +28,6 @@ const TableBody = (props) => {
       <tr key = {index}>
         <td><a href={row.link} target="_blank" rel="noreferrer">{row.name}</a></td>
         <td>
-          <button>Edit</button>
           <button onClick={() => props.removeBookmark(index)}>Delete</button>
         </td>
       </tr>

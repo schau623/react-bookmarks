@@ -17,13 +17,6 @@ class App extends Component {
       });
     }
 
-    editBookmark = (index) => {
-      const {bookmarks} = this.state
-      this.setState({
-          
-        })
-    }
-
     handleSubmit = (bookmark) => {
         this.setState({
           bookmarks: [...this.state.bookmarks, bookmark]
