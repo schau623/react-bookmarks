@@ -29,7 +29,6 @@ class Form extends Component {
 
         //save data to local storage
         const json = JSON.stringify(this.state);
-        console.log(this.state);
         localStorage.setItem(this.state.name, json);
     }
 
